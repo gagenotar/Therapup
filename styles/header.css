@@ -6,8 +6,7 @@
 
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
 
     z-index: 2;    
     background-color: #5C9EAD;
@@ -18,18 +17,21 @@
 .header-left {
     flex: 1;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .logo-header-img {
-    width: 130px;
-    border-radius: 50%;
     position: absolute;
     top: 10px;
-    left: 10px;
+    margin-left: 10px;
+    height: 200%;
     background: #DB8A74;
     border-style: solid;
     border-color: white;
     border-width: 2px;
+    border-radius: 50%;
 }
 
 .header-center {
@@ -76,4 +78,26 @@ nav ul li {
 .join-header:hover {
     color: #5C9EAD;
     background-color: white;
+}
+
+@media only screen and (max-width: 750px) {
+    #header {
+        height: 15vh;
+    }
+
+    .logo-header-img {
+        position: relative;
+        top: 0;
+        height: auto;
+        max-height: 90%;
+        object-fit: fill;
+    }
+
+    nav {
+        display: flex;
+        min-width: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
