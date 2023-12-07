@@ -1,33 +1,20 @@
 #support {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: 200px;
-}
-
-.graphic-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    left: 0;
-    right: 0;
+    top: 10vh;
+    height: 130vh;
     width: 100%;
 }
 
 .heading {
     display: grid;
     grid-template-rows: auto auto;
+    align-items: center;
     text-align: center;
-    padding: 10px 0;
-    margin-bottom: 30px;
+    margin: 30px 0;
     width: 100%;
 }
 
@@ -41,104 +28,56 @@
 
 .opening-text {
     color: #6C8EAD;
+    padding: 5px;
 }
 
-/* Left side */
-.support-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 10px;
-}
-
-/* Right side */
-.support-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 10px;
-}
-
-.support-graphic {
-    display: grid;
-    grid-template-rows: auto auto;
-    padding: 15px;
-    row-gap: 10px;
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(255, 235, 235);
-    border-radius: 10px;
-
-    z-index: 1;
-}
-
-.support-graphic p {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.graphic-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/* Graphic left side */
-.support-graphic-left {
-    flex: 1;
-    flex-shrink: 0;
-    height: 553.4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.support-reqs {
-    flex: 1;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 270px;
-}
-
-.support-reqs-row {
-    flex: 1;
-    flex-shrink: 0;
-    background-color: #DB8A74;
-    color: white;
-    display: inline-block; 
-    padding: 8px;
-    margin: 10px 0;
-    border-radius: 0 0 0 15px;
+.graphic {
+    flex: 3;
+    display: grid; 
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    margin-bottom: 15vh;
 }
 
 .title-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
 }
 
 .support-title {
     display: flex;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    padding: 5px;
 }
 
-/* Graphic right side */
-.support-graphic-right {
-    flex: 1;
-    flex-shrink: 0;
+.graphic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+}
+
+/* Left side */
+.support-graphic-left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 10px 0;
 }
 
-.support-check {
-    flex: 1;
+.support-reqs-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    min-height: 50px;
+    color: white;
+    background-color: #DB8A74;
+    border-radius: 0 0 0 10px;
+}
+
+/* Right side */
+.support-graphic-right {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -147,18 +86,14 @@
 .check-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-
-    background-color: white;
+    justify-content: space-around;
     border-radius: 10px;
+    padding: 10px;
 }
 
-.check-x {
-    display: block;
-
+.check-icon {
     width: 50px;
-    margin: 10px;
     padding: 5px;
     border-radius: 50%;
     background-color: white;
@@ -182,3 +117,31 @@
     background-color: rgb(255, 17, 17);
 }
 
+@media (min-width: 700px) and (max-width: 850px) {
+    #support {
+        top: 15vh;
+    }
+}
+
+@media (max-width: 700px) {
+    #support {
+        top: 15vh;
+        height: 200vh;
+    }
+
+    .title-container {
+        font-size: 14px;
+        padding: 0 10px;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .graphic-container {
+        font-size: 14px;
+        padding: 0 10px;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .check-icon {
+        width: 30px;
+    }
+}

@@ -4,10 +4,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     margin-top: 200px;
 }
 
@@ -34,6 +31,7 @@
     color: white;
     padding: 20px;
     row-gap: 15px;
+    margin: 10px;
 }
 
 .join-top {
@@ -54,7 +52,8 @@
 }
 
 .join-row select {
-    width: 50%;
+    width: 100%;
+    max-width: 176.8px;
     margin: 20px 0;
     padding: 5px;
     border: 2px solid white;
@@ -67,46 +66,55 @@
 }
 
 .join-middle {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     border: 2px solid white;
     border-radius: 5px;
     padding: 20px;
 }
 
-.join-middle p {
-    margin: 5px 0;
-}
-
 .join-middle input {
     padding: 5px;
-    width: 50%;
+    width: 100%;
+    max-width: 200px;
     border: 2px solid white;
     border-radius: 5px;
     margin: 5px 0;
 }
 
+.middle-container {
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.middle-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-left p {
+    width: 100%;
+    max-width: 213.2px;
+}
+
 .middle-mid {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .middle-mid p {
-    margin-right: 67.07px;
+    width: 100%;
 }
 
 .middle-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: end;
 }
 
 .middle-right p {
-    margin-right: 134.27px;
+    width: 100%;
+    max-width: 213.2px;
 }
 
 .join-bottom {
@@ -138,4 +146,8 @@
 
 .join-why a {
     color: #5C9EAD;
+}
+
+@media (max-width: 700px) {
+
 }

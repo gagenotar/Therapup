@@ -6,23 +6,7 @@ nav {
     top: 0;
     width: 100%;
     height: 10vh;
-    background-color: #5C9EAD;
-    z-index: 100;
-}
-
-.logo-container {
-    position: fixed;
-    left: 20px;
-    display: flex;
-    align-items: center;
-    height: 10vh;
-}
-
-.header-logo {
-    height: 50%;
-    padding: 8px 20px;
-    border: white solid 2px;
-    border-radius: 10px 0 10px 0;
+    background-color: pink;
 }
 
 #check {
@@ -37,9 +21,17 @@ nav {
 
 .hamburger {
     display: none;
-    height: 60%;
+    height: 80%;
     margin: 0 20px;
     cursor: pointer;
+}
+
+.logo {
+    position: fixed;
+    left: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 ul {
@@ -52,49 +44,16 @@ ul li {
     margin: 0 20px;
     padding: 10px;
     list-style-type: none;
+    cursor: pointer;
 }
 
 ul li a {
     white-space: nowrap;
     color: white;
-    font-weight: 500;
     text-decoration: none;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-ul li a:hover {
-    color: #d1e9ee;
-}
-
-.join-header {
-    border: white solid 2px;
-    border-radius: 10px;
-    padding: 10px;
-    transition: all 0.3s;
-}
-
-.join-header:hover {
-    color: #5C9EAD;
-    background-color: white;
-}
-
-@media (min-width: 700px) and (max-width: 850px) {
-    nav {
-        height: 15vh;
-    }
-
-    ul li {
-        margin: 0 10px;
-    }
-
 }
 
 @media (max-width: 700px) {
-    nav {
-        height: 15vh;
-    }
-    
     .hamburger {
         display: block;
     }
@@ -103,14 +62,13 @@ ul li a:hover {
         flex-direction: column;
         justify-content: center;
         position: fixed;
-        top: 15vh;
+        top: 10vh;
         left: 0;
         width: 100%;
-        height: 85vh;
-        background-color: #5C9EAD;
+        height: 100vh;
+        background-color: pink;
         border-top: white solid 2px;
         opacity: 0;
-        font-size: 20px;
     }
 
     ul li {

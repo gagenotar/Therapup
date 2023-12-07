@@ -4,16 +4,12 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     margin-top: 200px;
 }
 
 .about-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
     justify-content: space-between;
     position: relative;
     left: 0;
@@ -26,16 +22,15 @@
 }
 
 .about-dogs {
+    flex: 2;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60vh;
 }
 
 .about-dogs img {
-    position: absolute;
-    top: 0;
     object-position: right;
     width: 400px;
     height: 400px;
@@ -50,6 +45,7 @@
 }
 
 .meet-text {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,4 +73,24 @@
 .about-bottom p {
     margin-bottom: 15px;
     font-size: 18px;
+}
+
+@media (max-width: 700px) {
+    .about-grid {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .about-dogs img {
+        width: 200px;
+        height: 200px;    
+    }
+
+    .meet-text {
+        align-items: center;
+    }
+
+    .about-bottom {
+        padding: 10px 15px;
+    }
 }
