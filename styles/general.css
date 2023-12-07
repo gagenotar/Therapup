@@ -1,14 +1,11 @@
 body {
     margin: 0;
     background-color: #ffffff;
+    height: 100vh;
 }
 
 * {
     font-family: Roboto, Arial;
     margin: 0;
     padding: 0;
-}
-
-#padder {
-    margin: 100px 0;
 }

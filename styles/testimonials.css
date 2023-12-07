@@ -4,8 +4,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 0;
-    right: 0;
+    width: 100%;
     margin-bottom: 100px;
 }
 
@@ -20,23 +19,22 @@
 }
 
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    width: 100%;
     color: #6C8EAD;
-    column-gap: 50px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
 }
 
 .grid-column {
+    flex: 1;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin: 0 10px;
     row-gap: 20px;
     border: 2px solid #DB8A74;
     border-radius: 10px;
-    height: 100%;
-    width: 100%;
     max-width: 305px;
 }
 
@@ -60,8 +58,6 @@
 }
 
 .grid-bottom p {
-    flex: 2;
-    padding: 10px 20px;
     font-size: 18px;
     font-weight: 500;
     color: #DB8A74;
@@ -69,4 +65,25 @@
 
 .icon-quote {
     height: 50px;
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .testimonials-grid {
+        flex-direction: column;
+    }
+
+    .grid-column {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .testimonials-grid {
+        flex-direction: column;
+    }
+
+    .grid-column {
+        margin: 30px 0;
+    }
+
 }

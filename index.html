@@ -3,6 +3,8 @@
     <head>
         <title>Therapup</title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/support.css">
@@ -23,23 +25,22 @@
     
     <body>
             <div id="header">
-                <div class="header-left">
-                    <img class="logo-header-img" src="images/therapup-logos/png/logo-color.png">
-                </div>
-                <div class="header-center">
-
-                </div>
-                <div class="header-right">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html" class="link">Home</a></li>
-                            <li><a href="services.html" class="link">Services</a></li>
-                            <li><a href="about.html" class="link">About</a></li>
-                            <li><a href="login.html" class="link">Log in</a></li>
-                            <li><a href="join.html" class="link"><p class=" join-header">Join us</p></a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav>
+                    <a href="index.html" class="logo-container">
+                        <img class="header-logo" src="images/therapup-logos/png/logo-white-long.png">
+                    </a>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="ham-container">
+                        <img class="hamburger" src="images/icons/icon-menu.png">
+                    </label>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                        <li><a href="join.html" class="join-header">Join us</a></li>
+                    </ul>
+                </nav>
             </div>
 
             <div id="video-opener">
@@ -57,32 +58,26 @@
                     <h1>Different people, different needs</h1>
                 </div>
                 <div class="support-grid">
-                    <a href="services.html">
-                        <div class="support-item">
+                    <a href="services.html" class="support-item">
                             <img src="images/service-dog.jpg">
-                            <div class="support-info">
-                                <h1>Service</h1>
-                                <p>Train one-on-one to perform specific tasks and work with people with physical, sensory, or psychiatric disabilities.</p>
-                            </div>
-                        </div>                        
+                        <div class="support-info">
+                            <h1>Service</h1>
+                            <p>Train one-on-one to perform specific tasks and work with people with physical, sensory, or psychiatric disabilities.</p>
+                        </div>                   
                     </a>
-                    <a href="services.html">
-                        <div class="support-item">
-                            <img src="images/therapy-dog.jpg">
-                            <div class="support-info">
-                                <h1>Therapy</h1>
-                                <p>Pair up with an owner and volunteer in clinical settings to provide comfort, affection, and love to different people.</p>
-                            </div>
-                        </div>                        
+                    <a href="services.html" class="support-item">
+                        <img src="images/therapy-dog.jpg">
+                        <div class="support-info">
+                            <h1>Therapy</h1>
+                            <p>Pair up with an owner and volunteer in clinical settings to provide comfort, affection, and love to different people.</p>
+                        </div>                    
                     </a>
-                    <a href="services.html">
-                        <div class="support-item">
-                            <img src="images/esa-dog.jpg">
-                            <div class="support-info">
-                                <h1>Emotional Support</h1>
-                                <p>Become a companion animal and ease anxiety, depression, and loneliness in someone prescribed by a mental health professional.</p>
-                            </div>
-                        </div>                        
+                    <a href="services.html" class="support-item">
+                        <img src="images/esa-dog.jpg">
+                        <div class="support-info">
+                            <h1>Emotional Support</h1>
+                            <p>Become a companion animal and ease anxiety, depression, and loneliness in someone prescribed by a mental health professional.</p>
+                        </div>                    
                     </a>
                 </div>
                 <a href="services.html">
@@ -181,8 +176,28 @@
                         <p>Accessability</p>
                     </div>                    
                 </div>
+                <div class="mobile-footer">
+                    <div class="mobile-socials">
+                        <img class="footer-icon" src="images/icons/icon-facebook.png">
+                        <img class="footer-icon" src="images/icons/icon-twitter.png">
+                        <img class="footer-icon" src="images/icons/icon-instagram.png">
+                        <img class="footer-icon" src="images/icons/icon-linkedin.png">
+                    </div>
+                    <h1>Services</h1>
+                    <a href="services.html">Service</a>
+                    <a href="services.html">Therapy</a>
+                    <a href="services.html">Emotional Support</a>
+                    <h1>About</h1>
+                    <a href="about.html">Who we are</a>
+                    <a href="join.html">Join us</a>
+                    <p>Blog</p>
+                    <p>Privacy policy</p>
+                    <p>Terms of use</p>
+                    <p>Accessability</p>
+                </div>
                 <p class="copyright">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
 
             </div>
+
     </body>
 </html>
