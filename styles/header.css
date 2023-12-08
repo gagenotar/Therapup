@@ -100,6 +100,7 @@ ul li a:hover {
     }
 
     ul {
+        display: none;
         flex-direction: column;
         justify-content: center;
         position: fixed;
@@ -109,7 +110,6 @@ ul li a:hover {
         height: 85vh;
         background-color: #5C9EAD;
         border-top: white solid 2px;
-        opacity: 0;
         font-size: 20px;
     }
 
@@ -118,6 +118,6 @@ ul li a:hover {
     }
 
     #check:checked ~ ul {
-        opacity: 100%;
+        display: flex;
     }
 }
